@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(351deg, rgba(2,0,36,1) 0%, rgba(2,16,19,0.6699054621848739) 100%), url(https://cdn.pixabay.com/photo/2020/07/02/04/31/matrix-5361690_1280.png);
+    font-family: "Poppins", serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 480px;
+    height: 480px;
+    background-color: rgba(27, 77, 23, 0.062);
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.356) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    backdrop-filter: blur(0.8px);
+}
+
+.screen{
+    font-size: 28px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
